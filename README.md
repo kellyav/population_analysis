@@ -66,6 +66,12 @@ Determine the names of the lowest five countries, and their regions, in terms of
 
 This script came with the csv data files (not my own script), and creates the cities, countries, languages, economies, currencies, populations, countries_plus, economies2010, and economies2015 tables
 
+## SQL Set Theory notes 
+
+- set_theory_syntax
+
+Notes on set theory syntax!
+
 ## Resources
 Thanks to 
 - Chester Ismay // https://www.linkedin.com/in/chesterismay/ for the Countries, Leaders, and Diagrams databasets.
