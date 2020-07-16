@@ -3,7 +3,7 @@
 ## Database
 - countries_and_leaders_db
 
-## Tables
+### Tables
 - countries
 
 - diagrams
