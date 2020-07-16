@@ -1,5 +1,5 @@
 
---determine the average gross domestic product (GDP) per capita by region in 2010.
+-- average gross domestic product (GDP) per capita by region in 2010.
 SELECT region, AVG(gdp_percapita) AS avg_gdp
 FROM countries as c
   LEFT JOIN economies AS e
@@ -11,7 +11,7 @@ ORDER BY avg_gdp DESC;
 
 
 
---identify the currencies used in Oceanian countries!
+--currencies used in Oceanian countries
 SELECT code, continent, name
   FROM countries
   WHERE continent= 'Oceania'
@@ -22,9 +22,9 @@ SELECT code, continent, name
   	 FROM currencies);
 
 
-
---for each of the six continents listed in 2015, you'll identify which country had the maximum inflation rate (and how high it was)
-SELECT name, continent, inflation_rate
+/* for each of the six continents listed in 2015, 
+identify which country had the maximum inflation rate (and how high it was) */
+SELECT name, continent, inflation_rate 
 FROM countries
 INNER JOIN economies
 -- Match on code
@@ -41,7 +41,7 @@ WHERE year = 2015
              WHERE year = 2015) AS subquery
         GROUP BY continent);
 
---2015 economic data for countries that do not have  gov_form of 'Constitutional Monarchy' or 'Republic' in their gov_form.
+--2015 economic data for countries that do not have  gov_form of 'Constitutional Monarchy' or 'Republic' 
 SELECT code, inflation_rate, unemployment_rate
 FROM economies
 WHERE year = 2015 AND code NOT  IN
