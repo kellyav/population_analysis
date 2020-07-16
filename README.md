@@ -1,4 +1,5 @@
 # population_analysis
+Exploring features of countries and their cities throughout the world, using PostgreSQL.
 
 ## Database
 - countries_and_leaders_db
