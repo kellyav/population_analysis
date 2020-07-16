@@ -1,11 +1,3 @@
---which countries also have a city with the same name as their country name?
-SELECT name
-FROM countries
--- Set theory clause
-	INTERSECT
-SELECT name
-FROM cities;
-
 --Determine the names of capital cities that are not listed in the cities table.
 SELECT capital
 FROM countries
@@ -16,7 +8,16 @@ FROM cities
 ORDER BY capital;
 
 
---Identify the country codes that are included in either economies or currencies but not in populations
+--which countries also have a city with the same name as their country name?
+SELECT name
+FROM countries
+-- Set theory clause
+	INTERSECT
+SELECT name
+FROM cities;
+
+
+--country codes included in either economies or currencies but not in populations
 SELECT name, country_code
  FROM  cities AS c1
  WHERE country_code IN
