@@ -52,7 +52,7 @@ WHERE year = 2015 AND code NOT  IN
 ORDER BY inflation_rate ;
 
 
---get the country names and other 2015 data in the economies table and the countries table for Central American countries with an official language.
+--country names, total investment and imports for Central American countries with an official language.
 SELECT DISTINCT name, total_investment, imports
 FROM countries AS c
 LEFT JOIN economies AS e
