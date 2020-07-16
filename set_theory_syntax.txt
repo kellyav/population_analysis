@@ -1,0 +1,12 @@
+ /* SQL set theory!
+
+Union: like union in math 
+Union all: includes all of both tables, which double counts
+
+Intersect: like intersect in math
+Except: like a subset in math, excludes a subset of the table *\
+
+/* When intersect looks at two columns, it includes both columns in the search. 
+It looks for *records* in common, not individual key fields like what a join does to match. *\
+
+
